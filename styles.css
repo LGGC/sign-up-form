@@ -1,32 +1,34 @@
-body, html {
+html {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
 
 @font-face {
     font-family: Norse;
     src: url(./Norse-Bold.otf);
 }
 
-#container {
+main     {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #space-image {
     background-image: url("/space.jpg");
     background-size: cover;
     flex: 1;
-    
-
 }
 
 #text {
     margin: 10vh 5vw 5vh 5vw;
-    padding: 10px;
-    font-weight: 400;
     font-size: large;
     font-weight: 600;
 }
@@ -36,10 +38,17 @@ body, html {
 }
 
 #form-card {
-    height: 300px;
+    height: fit-content;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 2.5vh 5vw;
+    font-weight: bold;
+    font-size: 24px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5vw;
 }
 
 img {
@@ -59,3 +68,54 @@ img {
     letter-spacing: 1vw;
 }
 
+#form-card > div {
+    margin: 2.5vh 0;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    flex-basis: 25%;
+}
+
+#form-card > span {
+    flex-basis: 100%;
+}
+
+input {
+    border-radius: 5px;
+    font-size: 20px;
+    border-color: #E5E7EB;
+    border-style: solid;
+}
+
+input:focus {
+    outline-color: blue;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #719ECE;
+    border: 1px solid #719ECE;
+    border-radius: 15px;
+    box-shadow: 0 0 10px lightgray;
+    color: white;
+    font-size: 24px;
+    margin: 5vh 0 0 5vw;
+}
+
+button:hover {
+    background-color: white;
+    color: #719ECE;
+
+}
+
+p {
+    margin: 2.5vh 5vw;
+}
+
+p > span {
+    
+    color: #719ECE;
+}

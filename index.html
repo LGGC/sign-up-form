@@ -6,7 +6,7 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <div id="container">
+    <main id="container">
         <div id="space-image"> 
             <div id="cover">
                 <img src="/odin-lined.png" alt="space viking">
@@ -23,10 +23,44 @@
                 maiores rem et qui.
                 <br><br>you <i>know</i> you want to.
             </div>
-            <div id="form-card">
-                <form action="post"></form>
-            </div>
+            <form name="signup" action="post">
+                <div id="form-card">
+                    <span>Let's Start!</span>
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email-address">EMAIL</label>
+                        <input type="email" name="email-address" id="email-address" required>
+                    </div>
+                    
+                    <div>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number" required>
+                    </div>
+                    
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    
+                    <div>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <span>Log in</span></p>
+            </form>
+            
         </div>
-    </div>
+    </main>
 </body>
 </html>
