@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <title>Sign Up</title>
 </head>
@@ -23,7 +23,7 @@
                 maiores rem et qui.
                 <br><br>you <i>know</i> you want to.
             </div>
-            <form name="signup" action="post">
+            <form name="signup" action="get">
                 <div id="form-card">
                     <span>Let's Start!</span>
                     <div>
@@ -49,6 +49,7 @@
                     <div>
                         <label for="password">PASSWORD</label>
                         <input type="password" name="password" id="password" required>
+                        <span id="message">* Passwords do not match</span>
                     </div>
                     
                     <div>

@@ -89,7 +89,7 @@ input {
     border-style: solid;
 }
 
-input:focus {
+input:focus:not(.error) {
     outline-color: blue;
     box-shadow: 0 0 10px #719ECE;
 }
@@ -111,6 +111,13 @@ button:hover {
 
 }
 
+input:invalid, .error {
+    outline-color: red;
+    border: 1px solid red;
+    box-shadow: 0 0 10px tomato;
+
+}
+
 p {
     margin: 2.5vh 5vw;
 }
@@ -118,4 +125,8 @@ p {
 p > span {
     
     color: #719ECE;
+}
+
+#message {
+    color: red;
 }
