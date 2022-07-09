@@ -22,7 +22,7 @@ main     {
 }
 
 #space-image {
-    background-image: url("/space.jpg");
+    background-image: url("./photos/space.jpg");
     background-size: cover;
     flex: 1;
 }
